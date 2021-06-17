@@ -16,7 +16,7 @@
 // }
 
 function find3sum(arr){
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length-1; i++) {
         let map = {}
         for (let j = i+1; j < arr.length; j++) {
             let sum = -(arr[i]+arr[j])
