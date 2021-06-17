@@ -2,13 +2,26 @@
 
 // Given an array of distinct elements. The task is to find triplets in the array whose sum is zero.
 
+// function find3sum(arr){
+//     for (let i = 0; i < arr.length-1; i++) {
+//         let map = {}
+//         for (let j = i+1; j < arr.length; j++) {
+//             let nsum = -(arr[i]+arr[j])
+//             if(map[nsum])
+//                 console.log('ans----', nsum, arr[i], arr[j])
+//             else
+//                 map[arr[j]]=arr[j]
+//         }
+//     }
+// }
+
 function find3sum(arr){
-    for (let i = 0; i < arr.length-1; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let map = {}
         for (let j = i+1; j < arr.length; j++) {
-            let nsum = -(arr[i]+arr[j])
-            if(map[nsum])
-                console.log('ans----', nsum, arr[i], arr[j])
+            let sum = -(arr[i]+arr[j])
+            if(map[sum])
+                console.log('====', arr[i], arr[j], map[sum])
             else
                 map[arr[j]]=arr[j]
         }
