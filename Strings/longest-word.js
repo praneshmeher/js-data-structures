@@ -12,6 +12,11 @@ function longestword(str){
     return word
 }
 
+function longestword1(str){
+    let arr = str.split(' ').sort((a,b)=>a.length-b.length)
+    return arr[arr.length-1]
+}
+
 let str = 'The quick brown fox jumped over the lazy dog'
-console.log(longestword(str))
+console.log(longestword1(str))
 
