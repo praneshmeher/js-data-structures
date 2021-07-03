@@ -2,18 +2,16 @@
 // Time complexity : O(n * d) 
 // Auxiliary Space : O(1)
 
-function arrayRotation(arr, n){
-
-    for(let i=0; i<n;i++){
-        let temp = arr[0]
-        for (let j = 0; j < arr.length; j++) {
+function rotation(arr, n){
+    for (let i = 0; i < n; i++) {
+        let start = arr[0]
+        for (let j = 0; j < arr.length-1; j++) {
             arr[j]=arr[j+1]
         }
-        arr[arr.length-1]=temp
+        arr[arr.length-1]=start
     }
-
-};
+    return arr
+}
 
 let arr = [1,2,3,4,5]
-arrayRotation(arr, 3)
-console.log(arr)
+console.log(rotation(arr,2))
