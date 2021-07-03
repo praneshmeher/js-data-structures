@@ -28,7 +28,7 @@ function rearrange1(arr){
     return arr
 }
 
-function rearrange(arr){
+function rearrange2(arr){
     let map = {}
     for (let i = 0; i < arr.length; i++) {
         map[arr[i]]=1
