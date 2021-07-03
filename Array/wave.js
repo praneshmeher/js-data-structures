@@ -7,8 +7,8 @@ function wave(arr){
         arr[i]= arr[i+1]
         arr[i+1]=temp
     }
+    return arr
 }
 
 let arr = [ 10, 90, 49, 2, 1, 5, 23 ];
-wave(arr)
-console.log(arr.toString())
+console.log(wave(arr))
