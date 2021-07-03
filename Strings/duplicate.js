@@ -11,5 +11,15 @@ function duplicate(str){
     return map
 }
 
+
+
 let str = 'abrakadabra'
-console.log(duplicate(str))
+let map = duplicate(str)
+
+for(let key in map){
+    if(map[key] == Math.max(...Object.values(map)))
+        console.log(key)
+}
+
+
+
