@@ -17,6 +17,11 @@ function longestword1(str){
     return arr[arr.length-1]
 }
 
+function longestword2(str){
+    let word = str.split(' ').reduce((a,b)=>a.length>b.length ? a:b)
+    return word
+}
+
 let str = 'The quick brown fox jumped over the lazy dog'
 console.log(longestword1(str))
 
